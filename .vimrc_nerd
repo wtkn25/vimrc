@@ -35,6 +35,8 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'scrooloose/syntastic'
 " ツリーを表示
 NeoBundle 'scrooloose/nerdtree'
+"nerdtreeのgitプラグイン
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 " 多機能セレクタ
 NeoBundle 'ctrlpvim/ctrlp.vim'
 " CtrlPの拡張プラグイン. 関数検索
@@ -45,6 +47,10 @@ NeoBundle 'suy/vim-ctrlp-commandline'
 NeoBundle 'rking/ag.vim'
 " プロジェクトに入ってるESLintを読み込む
 NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
+" Gitプラグイン
+NeoBundle 'tpope/vim-fugitive'
+
+
 
 " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
 if has('lua')
