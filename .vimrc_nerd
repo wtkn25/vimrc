@@ -47,9 +47,10 @@ NeoBundle 'suy/vim-ctrlp-commandline'
 NeoBundle 'rking/ag.vim'
 " プロジェクトに入ってるESLintを読み込む
 NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
-" Gitプラグイン
+" Gitコマンドプラグイン
 NeoBundle 'tpope/vim-fugitive'
-
+" git管理しているファイルに差分があることを行番号左のマークでしめす。
+NeoBundle 'airblade/vim-gitgutter'
 
 
 " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
