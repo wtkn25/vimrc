@@ -51,7 +51,10 @@ NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
 NeoBundle 'tpope/vim-fugitive'
 " git管理しているファイルに差分があることを行番号左のマークでしめす。
 NeoBundle 'airblade/vim-gitgutter'
-
+" Pythonの補完機能
+NeoBundle 'davidhalter/jedi-vim'
+" Tabキーで補完するには必要みたい
+NeoBundle 'ervandew/supertab'
 
 " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
 if has('lua')
@@ -80,6 +83,13 @@ endif
 
 set t_Co=256 " iTerm2など既に256色環境なら無くても良い
 syntax enable " 構文に色を付ける
+
+
+
+"----------------------------------------------------------
+" leaderの定義
+"----------------------------------------------------------
+let mapleader = ","
 
 "----------------------------------------------------------
 " 文字
@@ -179,7 +189,6 @@ endif
 
 "----------------------------------------------------------
 " Undoに関する処理
-" ~./vimの中にUndoフォルダを作る必要がある
 "----------------------------------------------------------
 if has('persistent_undo')
   set undodir=~/.vim/undo
@@ -231,6 +240,9 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['javascript'],
                            \ 'passive_filetypes': [] }
 
+" Pythonに関する設定
+" pip install flake8が必要
+let g:syntastic_python_checkers = ["flake8"]
 "----------------------------------------------------------
 " CtrlP
 "----------------------------------------------------------
