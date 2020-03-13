@@ -285,6 +285,8 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+" 隠しファイルを表示する
+let g:NERDTreeShowHidden = 1
 
 "----------------------------------------------------------
 " GitGutterに関する設定
