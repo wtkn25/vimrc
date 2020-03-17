@@ -315,3 +315,11 @@ nmap ghu <Plug>(GitGutterUndoHunk)
 " 変更点をプレビュー
 "nnoremap <Leader> <Plug>(GitGutterPreviewHunk)
 
+
+"----------------------------------------------------------
+" かっこの補完に関する設定
+"----------------------------------------------------------
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
